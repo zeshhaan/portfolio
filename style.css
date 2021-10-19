@@ -41,10 +41,11 @@ p {
 
   /* extra styling   */
   font-weight: 600;
+  color: #121314;
 }
 .underline:hover {
   background-size: 100% 3px;
-  color: inherit;
+  /* color: inherit; */
 }
 
 div > a {
