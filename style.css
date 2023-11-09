@@ -4,6 +4,7 @@ body {
   font-size: calc(10px + 0.33vw);
   -webkit-font-smoothing: antialiased;
   padding: 5vh 10vw;
+  background-color: #fff;
   color: #121314;
 }
 
@@ -66,4 +67,25 @@ div > a:after {
 }
 div > a:hover:after {
   top: 0%;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121314;
+    color: #ffffff;
+  }
+
+  ::selection {
+    background: rgba(79, 192, 141, 0.5);
+  }
+
+  .underline {
+    background-image: linear-gradient(#62fbb6de, #62fbb6de);
+    color: #ffffff;
+  }
+
+  div > a {
+    color: #ffffff;
+  }
 }
